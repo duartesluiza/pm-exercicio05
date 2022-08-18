@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8B8B83"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelUsuario"
+        android:layout_width="55dip"
+        android:layout_height="wrap_content"
+        android:text="Usuário"
+        />
+
+    <EditText
+        android:id="@+id/campoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toRightOf="@+id/labelUsuario"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/labelSenha"
+        android:layout_width="55dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/campoUsuario"
+        android:gravity="left"
+        android:text="Senha"
+        />
+
+    <EditText
+        android:id="@+id/campoSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_toRightOf="@+id/labelSenha"
+        android:layout_alignTop="@+id/labelSenha"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_below="@+id/campoSenha"
+        android:layout_alignParentRight="true"
+        android:text="Login"
+        />
+
+
+</RelativeLayout>
